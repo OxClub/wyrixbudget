@@ -34,6 +34,7 @@ object Routes {
     const val CALCULATOR = "calculators/{kind}"
     const val FORECAST = "forecast"
     const val REPORTS = "reports"
+    const val GST_INVOICE = "gst-invoice"
     const val SETTINGS = "settings"
     const val CATEGORIES = "settings/categories"
     const val RATES = "settings/rates"

@@ -16,7 +16,7 @@ data class MoreEntry(val title: String, val blurb: String, val onClick: () -> Un
 @Composable
 fun MoreScreen(
     onGoals: () -> Unit, onBills: () -> Unit, onSubscriptions: () -> Unit, onLoans: () -> Unit, onRecurring: () -> Unit,
-    onCalculators: () -> Unit, onForecast: () -> Unit, onReports: () -> Unit, onAccounts: () -> Unit, onSettings: () -> Unit,
+    onCalculators: () -> Unit, onForecast: () -> Unit, onReports: () -> Unit, onAccounts: () -> Unit, onGstInvoice: () -> Unit, onSettings: () -> Unit,
 ) {
     val entries = listOf(
         MoreEntry("Savings goals", "Save toward something specific", onGoals),
@@ -26,6 +26,7 @@ fun MoreScreen(
         MoreEntry("Recurring items", "Salary, rent and other regular entries", onRecurring),
         MoreEntry("Balance forecast", "Where your balance is heading", onForecast),
         MoreEntry("Calculators", "EMI, savings, tax estimate and more", onCalculators),
+        MoreEntry("GST invoice generator", "Create GST invoices and export professional PDFs", onGstInvoice),
         MoreEntry("Reports", "Export PDF, Excel or CSV", onReports),
         MoreEntry("Accounts", "Cash, bank, cards and wallets", onAccounts),
         MoreEntry("Settings", "Security, backup, notifications and data", onSettings),

@@ -46,6 +46,7 @@ import com.wyrix.budget.presentation.goals.GoalDetailScreen
 import com.wyrix.budget.presentation.goals.GoalEditorScreen
 import com.wyrix.budget.presentation.goals.GoalsScreen
 import com.wyrix.budget.presentation.home.HomeScreen
+import com.wyrix.budget.presentation.invoices.GstInvoiceScreen
 import com.wyrix.budget.presentation.loans.LoanDetailScreen
 import com.wyrix.budget.presentation.loans.LoanEditorScreen
 import com.wyrix.budget.presentation.loans.LoansScreen
@@ -131,7 +132,7 @@ private fun WyrixNavHost(nav: NavHostController, modifier: Modifier) {
                 onGoals = { nav.navigate(Routes.GOALS) }, onBills = { nav.navigate(Routes.BILLS) }, onSubscriptions = { nav.navigate(Routes.SUBSCRIPTIONS) },
                 onLoans = { nav.navigate(Routes.LOANS) }, onRecurring = { nav.navigate(Routes.RECURRING) }, onCalculators = { nav.navigate(Routes.CALCULATORS) },
                 onForecast = { nav.navigate(Routes.FORECAST) }, onReports = { nav.navigate(Routes.REPORTS) }, onAccounts = { nav.navigate(Routes.ACCOUNTS) },
-                onSettings = { nav.navigate(Routes.SETTINGS) },
+                onGstInvoice = { nav.navigate(Routes.GST_INVOICE) }, onSettings = { nav.navigate(Routes.SETTINGS) },
             )
         }
 
@@ -174,6 +175,7 @@ private fun WyrixNavHost(nav: NavHostController, modifier: Modifier) {
         }
         composable(Routes.FORECAST) { ForecastScreen(onBack = back) }
         composable(Routes.REPORTS) { ReportsScreen(onBack = back) }
+        composable(Routes.GST_INVOICE) { GstInvoiceScreen(onBack = back) }
 
         // settings
         composable(Routes.SETTINGS) {

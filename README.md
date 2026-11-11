@@ -63,3 +63,9 @@ Package `com.wyrix.budget`. No internet permission, no account, no analytics. Al
 `presentation/` Compose screens + ViewModels per feature · `di/` Hilt.
 
 See TESTING.md, RELEASE.md and PLAY_STORE.md.
+
+## GST invoice generator
+
+The More tab includes a GST invoice generator for Indian sellers. It calculates taxable value and GST for intra-state supplies (CGST + SGST) or inter-state supplies (IGST), shows a live total, and exports a one-page PDF through Android's document picker. The first version supports one item/service line per invoice and does not store invoice drafts, validate GSTINs, determine HSN/SAC rates, or file GST returns. Users must verify the applicable tax treatment and statutory invoice details before issuing an invoice.
+
+The app colour system uses a premium navy/blue foundation with blue primary actions and restrained coral accents. Both light and dark theme modes remain supported.
